@@ -78,7 +78,7 @@ class BlitsAndPottsRunner(threading.Thread):
             print("[%s] potts running." % datetime.now())
             a2mf = s.out_dir + s.domain + ".a2m"
             matf = s.out_dir + s.domain + ".mat"
-            reformatCmd = ["/hh-suite/scripts/reformat.pl", a3mf, a2mf]
+            reformatCmd = ["/home/hh-suite/scripts/reformat.pl", a3mf, a2mf]
             subprocess.run(reformatCmd)
 
             import plmDCA_asymmetric
